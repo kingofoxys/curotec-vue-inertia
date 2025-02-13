@@ -24,7 +24,6 @@ class GeneralController extends Controller
 
     public function store(Request $request)
     {
-        //dd("inside");
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'required|string|max:255',
@@ -35,7 +34,6 @@ class GeneralController extends Controller
         ]);
 
         $insert = BookCatalogs::create($validatedData);
-        //dd($insert);
 
         return redirect()->route('dashboard')->with('success', 'Book added successfully!');
     }

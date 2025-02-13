@@ -34,7 +34,6 @@ const submit = () => {
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
           <div class="p-6">
             <form @submit.prevent="submit" class="space-y-4">
-              <!-- Name -->
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                 <input
@@ -46,7 +45,6 @@ const submit = () => {
                 <p v-if="form.errors.name" class="text-sm text-red-500">{{ form.errors.name }}</p>
               </div>
 
-              <!-- Description -->
               <div>
                 <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
                 <input
@@ -58,7 +56,6 @@ const submit = () => {
                 <p v-if="form.errors.description" class="text-sm text-red-500">{{ form.errors.description }}</p>
               </div>
 
-              <!-- Author -->
               <div>
                 <label for="author" class="block text-sm font-medium text-gray-700">Author</label>
                 <input
@@ -70,7 +67,6 @@ const submit = () => {
                 <p v-if="form.errors.author" class="text-sm text-red-500">{{ form.errors.author }}</p>
               </div>
 
-              <!-- Publisher -->
               <div>
                 <label for="publisher" class="block text-sm font-medium text-gray-700">Publisher</label>
                 <input
@@ -82,7 +78,6 @@ const submit = () => {
                 <p v-if="form.errors.publisher" class="text-sm text-red-500">{{ form.errors.publisher }}</p>
               </div>
 
-              <!-- Category -->
               <div>
                 <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
                 <input
@@ -94,7 +89,6 @@ const submit = () => {
                 <p v-if="form.errors.category" class="text-sm text-red-500">{{ form.errors.category }}</p>
               </div>
 
-              <!-- Language -->
               <div>
                 <label for="language" class="block text-sm font-medium text-gray-700">Language</label>
                 <input
@@ -106,7 +100,6 @@ const submit = () => {
                 <p v-if="form.errors.language" class="text-sm text-red-500">{{ form.errors.language }}</p>
               </div>
 
-              <!-- Submit Button -->
               <div>
                 <button
                   type="submit"

@@ -3,9 +3,6 @@
 const props = defineProps({
   bookCatalogs: Array,
 });
-
-// Log the bookCatalogs prop (optional)
-//console.log(bookCatalogs);
 </script>
 
 
