@@ -22,7 +22,6 @@ class BookCatalogsSeeder extends Seeder
                 'publisher' => $faker->company,
                 'category' => $faker->word,
                 'language' => $faker->languageCode,
-                'cover_image' => $faker->url(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);

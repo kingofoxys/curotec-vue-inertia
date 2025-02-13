@@ -106,18 +106,6 @@ const submit = () => {
                 <p v-if="form.errors.language" class="text-sm text-red-500">{{ form.errors.language }}</p>
               </div>
 
-              <!-- Cover Image -->
-              <div>
-                <label for="cover_image" class="block text-sm font-medium text-gray-700">Cover Image URL</label>
-                <input
-                  v-model="form.cover_image"
-                  type="text"
-                  id="cover_image"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm"
-                />
-                <p v-if="form.errors.cover_image" class="text-sm text-red-500">{{ form.errors.cover_image }}</p>
-              </div>
-
               <!-- Submit Button -->
               <div>
                 <button

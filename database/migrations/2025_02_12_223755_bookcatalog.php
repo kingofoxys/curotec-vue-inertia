@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('publisher');
             $table->string('category');
             $table->string('language');
-            $table->string('cover_image');
             $table->timestamps();
         });
     }

@@ -15,7 +15,6 @@ class BookCatalogs extends Model
         'author',
         'publisher',
         'category',
-        'language',
-        'cover_image'
+        'language'
     ];
 }

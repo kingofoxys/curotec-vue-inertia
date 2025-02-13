@@ -22,10 +22,9 @@ class GeneralController extends Controller
         return Inertia::render('BookCatalog/Create');
     }
 
-    // Store a newly created book in the database
     public function store(Request $request)
     {
-        // Validate the request
+        //dd("inside");
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'required|string|max:255',
@@ -33,13 +32,11 @@ class GeneralController extends Controller
             'publisher' => 'required|string|max:255',
             'category' => 'required|string|max:255',
             'language' => 'required|string|max:255',
-            'cover_image' => 'required|url|max:255',
         ]);
 
-        // Create the book
-        BookCatalogs::create($validatedData);
+        $insert = BookCatalogs::create($validatedData);
+        //dd($insert);
 
-        // Redirect to the dashboard or another page
         return redirect()->route('dashboard')->with('success', 'Book added successfully!');
     }
 }
